@@ -43,7 +43,7 @@ nav {
   background: #f4f4f4;
   padding: 20px;
   position: sticky;
-  top: 100px;/*stick랑 top 하면 스크롤 내려도 어느정도 목차(메뉴)가 딸려옴*/
+  top: 100px;/*stick랑 top 하면 스크롤 내려도 목차(메뉴)가 딸려옴*/
 }
 
 nav ul {
@@ -129,3 +129,43 @@ nav ul li a {
     text-align: center;
   }
 
+  form input:focus {
+    border: 3px dashed hotpink;
+    outline: 0;
+  } /*focus 입력하기 위해 클릭했을때 포커스 되었다고 함!*/
+
+  .images li:hover {
+    position: relative;
+    top:  -4px;
+  } /*마우스 올려놓으면 이미지가 살짝씩 움직임!크게 움직이게 하려면 px값 올리면 됨*/
+
+  /* 목차의 첫번째만 css 속성 적용한 것
+  nav ul li:first-child {
+    border: 2px solid coral;
+    border-radius: 5px;
+  }*/
+
+  article p::first-line {
+    font-size: 20px;
+    font-weight: bold;
+  } /*p문단의 첫줄만 css 속성 적용*/
+
+  /*
+  @media screen and (max-width:1200px) {
+    .banner .welcome {
+      font-size: 15px;
+  } 
+  } 1200px이 미만이 되었을 때 글씨가 작아진다.라는 미디어쿼리를 사용한 것*/
+
+  @media screen and (max-width:760px) {
+    .banner .welcome {
+      font-size: 15px;
+      position: relative;
+      text-align: center;
+      top: 0;
+      left: 0;
+      background-color: #f9e0b1;
+    }   
+  } /*760px 미만에서는 글씨도 작아지고, 그렇다~
+  미디어 쿼리의 경우 작성 순서대로 적용됨~*/
+  /*pseudo classes*/
