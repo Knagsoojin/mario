@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+}
+ 
+header{
+  background-color: #fcd9c6;
+  /*position: absolute;어떤 상황이 와도 변하지않음*/
+  /*position: relative;상황에 맞게 변화됨*/
+  position: fixed;
+  width: 100%;
+  z-index: 1;/*이미지를 맨 앞으로 보이게 빼는 태그*/
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  border: 8px solid white;
+  border-radius: 30px;
+  padding: 6px 12px;
+  display: inline-block;
+}
+
+.banner {
+  /*모바일 화면을 구성하기 위함*/
+  position: relative;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.banner .welcome {
+  background-color: none;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  padding: 30px;
+}
+
+nav {
+  background: #f4f4f4;
+  padding: 20px;
+  position: sticky;
+  top: 100px;/*stick랑 top 하면 스크롤 내려도 어느정도 목차(메뉴)가 딸려옴*/
+}
+
+nav ul {
+  white-space: nowrap;/*영역을 벗어나도 글을 쓰겠다.*/
+  max-width: 1200px;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  width: 25%;
+  display: inline-block;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Noto Serif KR', serif;
+  text-align: center;
+}
+
+  nav ul li a:hover{
+    text-decoration: underline;
+    color: gray;
+  }
+
+  main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;/*우측 화면에 간격 생성*/
+  }
+
+  article h2 {
+    color: coral;
+  }
+
+  article p {
+    line-height: 2em;
+  }
+
+  .images {
+    text-align: center;
+    margin: 80px 0;
+  }
+
+  .images li {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 5%;
+  }
+
+  .images li img {
+    max-width: 100%;
+  }
+
+  section.join {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #8a8888;
+  }
+
+  section.join h2 {
+    font-size: 30px;
+    color: rgb(243, 142, 192);
+  }
+
+  form input {
+    margin: 15px 0;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 1px solid white;
+    border-radius: 26px;
+  }
+
+  footer {
+    background-color:  #fcd9c6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
